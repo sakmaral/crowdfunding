@@ -5,7 +5,7 @@ import { allSettled, fork } from 'effector';
 import { Provider } from 'effector-react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './app.tsx';
+import App from './app';
 import './index.css';
 const scope = fork();
 

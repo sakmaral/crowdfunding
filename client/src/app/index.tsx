@@ -1,3 +1,4 @@
+import { Pages } from '@/pages';
 import { Sidebar } from '@/widgets/sidebar';
 function App() {
   return (
@@ -6,7 +7,9 @@ function App() {
         <Sidebar />
       </div>
 
-      <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">нет</div>
+      <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
+        <Pages />
+      </div>
     </div>
   );
 }
