@@ -8,9 +8,24 @@ importers:
 
   .:
     dependencies:
+      atomic-router:
+        specifier: ^0.10.1
+        version: 0.10.1(effector@23.2.3)(history@5.3.0)
+      atomic-router-react:
+        specifier: ^0.10.0
+        version: 0.10.0(atomic-router@0.10.1(effector@23.2.3)(history@5.3.0))(effector-react@23.2.1(effector@23.2.3)(react@18.3.1))(effector@23.2.3)(react@18.3.1)
+      effector:
+        specifier: ^23.2.3
+        version: 23.2.3
+      effector-react:
+        specifier: ^23.2.1
+        version: 23.2.1(effector@23.2.3)(react@18.3.1)
       ethers:
         specifier: ^6.13.4
         version: 6.13.4
+      history:
+        specifier: ^5.3.0
+        version: 5.3.0
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -130,6 +145,10 @@ packages:
     resolution: {integrity: sha512-DWMCZH9WA4Maitz2q21SRKHo9QXZxkDsbNZoVD62gusNtNBBqDg9i7uOhASfTfIGNzW+O+r7+jAlM8dwphcJKQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+
+  '@babel/runtime@7.26.0':
+    resolution: {integrity: sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==}
+    engines: {node: '>=6.9.0'}
 
   '@babel/template@7.25.9':
     resolution: {integrity: sha512-9DGttpmPvIxBb/2uwpVo3dqJ+O6RooAFOS+lB+xDqoE2PVCE8nfoHMdZLpfCQRLwvohzXISPZcgxt80xLfsuwg==}
@@ -761,6 +780,22 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
+  atomic-router-react@0.10.0:
+    resolution: {integrity: sha512-9EM3n1eLDbuYQjWijiHMjA2l5UPvM2pt4O7Z0TUupuDz6KF00HNMd/iBIUq7uCyDwmyctgqqR5bHIeqRlXVUAQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      atomic-router: ^0.10.0
+      effector: ^22.8.8 || ^23
+      effector-react: ^22.1.0 || ^23
+      react: ^17 || ^18
+
+  atomic-router@0.10.1:
+    resolution: {integrity: sha512-u7XV+gOBgIAO84T58eXBkL3J4ARaHsltW7GuG01307BjvFfFGdE0yAVGm/JmMhBbIGhwTLHkalPbf8mudJIV3A==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      effector: ^22.8.8 || ^23
+      history: ^5.3.0
+
   autoprefixer@10.4.20:
     resolution: {integrity: sha512-XY25y5xSv/wEoqzDyXXME4AFfkZI0P23z6Fs3YgymDnKJkCGOnkL0iTxCa85UTqaSgfcqyf3UA6+c7wUvx/16g==}
     engines: {node: ^10 || ^12 || >=14}
@@ -812,6 +847,10 @@ packages:
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
+
+  clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -874,6 +913,17 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  effector-react@23.2.1:
+    resolution: {integrity: sha512-eyjHm095xgrDNe8wtF60w5AjaF+j4Z6XP/DxW8RvlCK4twQT5mkAbIBJxA7BXKLL74RpySai8QmjVBurzapBCw==}
+    engines: {node: '>=11.0.0'}
+    peerDependencies:
+      effector: ^23.0.0
+      react: '>=16.8.0 <19.0.0'
+
+  effector@23.2.3:
+    resolution: {integrity: sha512-nBk3pzdJKT/Sn3OhLUurZoxKXUBd+iqiYHNoBRDFc8EE/vXp2JPNsickX59ZjlDbsWZwTMCVV3tovxjRo+vMGQ==}
+    engines: {node: '>=11.0.0'}
 
   electron-to-chromium@1.5.68:
     resolution: {integrity: sha512-FgMdJlma0OzUYlbrtZ4AeXjKxKPk6KT8WOP8BjcqxWtlg8qyJQjRzPJzUtUn5GBg1oQ26hFs7HOOHJMYiJRnvQ==}
@@ -1052,6 +1102,9 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
+
+  history@5.3.0:
+    resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -1262,6 +1315,9 @@ packages:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
 
+  path-to-regexp@6.3.0:
+    resolution: {integrity: sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==}
+
   path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
@@ -1352,6 +1408,9 @@ packages:
   readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
+
+  regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
@@ -1501,6 +1560,11 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
+
+  use-sync-external-store@1.2.2:
+    resolution: {integrity: sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
@@ -1676,6 +1740,10 @@ snapshots:
   '@babel/parser@7.26.2':
     dependencies:
       '@babel/types': 7.26.0
+
+  '@babel/runtime@7.26.0':
+    dependencies:
+      regenerator-runtime: 0.14.1
 
   '@babel/template@7.25.9':
     dependencies:
@@ -2203,6 +2271,20 @@ snapshots:
 
   argparse@2.0.1: {}
 
+  atomic-router-react@0.10.0(atomic-router@0.10.1(effector@23.2.3)(history@5.3.0))(effector-react@23.2.1(effector@23.2.3)(react@18.3.1))(effector@23.2.3)(react@18.3.1):
+    dependencies:
+      atomic-router: 0.10.1(effector@23.2.3)(history@5.3.0)
+      clsx: 1.2.1
+      effector: 23.2.3
+      effector-react: 23.2.1(effector@23.2.3)(react@18.3.1)
+      react: 18.3.1
+
+  atomic-router@0.10.1(effector@23.2.3)(history@5.3.0):
+    dependencies:
+      effector: 23.2.3
+      history: 5.3.0
+      path-to-regexp: 6.3.0
+
   autoprefixer@10.4.20(postcss@8.4.49):
     dependencies:
       browserslist: 4.24.2
@@ -2262,6 +2344,8 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  clsx@1.2.1: {}
+
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -2309,6 +2393,14 @@ snapshots:
       tslib: 2.7.0
 
   eastasianwidth@0.2.0: {}
+
+  effector-react@23.2.1(effector@23.2.3)(react@18.3.1):
+    dependencies:
+      effector: 23.2.3
+      react: 18.3.1
+      use-sync-external-store: 1.2.2(react@18.3.1)
+
+  effector@23.2.3: {}
 
   electron-to-chromium@1.5.68: {}
 
@@ -2527,6 +2619,10 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
+  history@5.3.0:
+    dependencies:
+      '@babel/runtime': 7.26.0
+
   ignore@5.3.2: {}
 
   import-fresh@3.3.0:
@@ -2704,6 +2800,8 @@ snapshots:
       lru-cache: 10.4.3
       minipass: 7.1.2
 
+  path-to-regexp@6.3.0: {}
+
   path-type@4.0.0: {}
 
   picocolors@1.1.1: {}
@@ -2776,6 +2874,8 @@ snapshots:
   readdirp@3.6.0:
     dependencies:
       picomatch: 2.3.1
+
+  regenerator-runtime@0.14.1: {}
 
   resolve-from@4.0.0: {}
 
@@ -2955,6 +3055,10 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
+
+  use-sync-external-store@1.2.2(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   util-deprecate@1.0.2: {}
 
