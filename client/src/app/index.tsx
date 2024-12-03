@@ -1,4 +1,5 @@
 import { Pages } from '@/pages';
+import { Navbar } from '@/widgets/navbar';
 import { Sidebar } from '@/widgets/sidebar';
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       </div>
 
       <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
+        <Navbar />
         <Pages />
       </div>
     </div>
