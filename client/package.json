@@ -10,12 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "atomic-router": "^0.10.1",
-    "atomic-router-react": "^0.10.0",
-    "effector": "^23.2.3",
-    "effector-react": "^23.2.1",
     "ethers": "^6.13.4",
-    "history": "^5.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
