@@ -1,5 +1,11 @@
+export { ReactComponent as IconCampaign } from './campaign.svg';
 export { ReactComponent as IconDashboard } from './dashboard.svg';
 export { ReactComponent as IconLoader } from './loader.svg';
 export { ReactComponent as IconLogo } from './logo.svg';
+export { ReactComponent as IconLogout } from './logout.svg';
+export { ReactComponent as IconPayment } from './payment.svg';
+export { ReactComponent as IconProfile } from './profile.svg';
 export { ReactComponent as IconSearch } from './search.svg';
 export { ReactComponent as IconSun } from './sun.svg';
+export { ReactComponent as IconTag } from './type.svg';
+export { ReactComponent as IconWithdraw } from './withdraw.svg';
