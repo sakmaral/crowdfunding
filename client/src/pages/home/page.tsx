@@ -1,7 +1,7 @@
 import { CampaignCard } from '@/entities/campaign/ui/campaign-card';
 import { IconLoader } from '@/shared/assets/icons';
 import { useState } from 'react';
-
+import './model';
 const getCampaignCard = () => [
   {
     owner: 'User',
@@ -35,8 +35,8 @@ const getCampaignCard = () => [
   },
 ];
 export const HomePage = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [campaigns, setCampaigns] = useState(getCampaignCard());
+  const [isLoading] = useState(false);
+  const [campaigns] = useState(getCampaignCard());
 
   return (
     <div>

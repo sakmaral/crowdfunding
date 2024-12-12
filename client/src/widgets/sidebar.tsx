@@ -25,6 +25,7 @@ export const Sidebar = () => {
         <div className="flex flex-col justify-center items-center gap-3">
           {navlinks.map(({ name, disabled, icon: Icon }) => (
             <div
+              key={name}
               className={`w-[48px] h-[48px] rounded-[10px] ${
                 isActive && isActive === name && 'bg-[#2c2f32]'
               } flex justify-center items-center ${!disabled && 'cursor-pointer'}`}
